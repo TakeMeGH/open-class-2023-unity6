@@ -8,8 +8,9 @@ public class GameManager : MonoBehaviour
 {
     
     public static GameManager Singleton { get; private set; }    
-    private int totalSnowman = 3;
-    private int totalPlayerSnowman = 0;
+    private int _totalSnowman = 3;
+    private int _totalPlayerSnowman = 0;
+    [SerializeField] Transform[] _snowmanLocations;
     
     public void Awake()
     {
